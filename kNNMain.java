@@ -33,7 +33,7 @@ public class kNNMain{
 
     // TASK 5: Use the KNNClassifier class to determine the k nearest neighbors to a given DataPoint,
     // and make a print a predicted target label
-	KNNClassifier figureOutThisBoi = new KNNClassifier(4);
+	KNNClassifier figureOutThisBoi = new KNNClassifier(5);
 	//String gotty = figureOutThisBoi.predict(irisData,chosenDataPoint);
 	//System.out.println(gotty);
 
