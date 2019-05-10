@@ -43,14 +43,13 @@ public class kNNMain{
     // point based on nearest neighbors in training set. Calculate accuracy of model.
 	for(int i = 0; i<testing.size();i++){
 		gotty = figureOutThisBoi.predict(training,testing.get(i));
-		System.out.println(gotty);
-		System.out.println(testing.get(i).getLabel());
+		//System.out.println(gotty);
+		//System.out.println(testing.get(i).getLabel());
 		if(gotty.equals(testing.get(i).getLabel())){
 			count++;
-		}
-		System.out.println("Accuracy is " + (double)(count) / (double)(testing.size()) * 100. + "%");		
+		}	
 	}
-
+	System.out.println("Accuracy is " + (double)(count) / (double)(testing.size()) * 100. + "%");	
   }
 
   public static double mean(double[] arr){
